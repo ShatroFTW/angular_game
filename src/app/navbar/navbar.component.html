@@ -1,9 +1,11 @@
-<ul class="nav-tabs">
-    <li ngbNavItem>
-        <button ngbNavLink>Home</button>
-        <ng-template ngbNavContent>First content</ng-template>
-    </li>
-    <li ngbNavItem>
-        <button ngbNavLink>Stats</button>
-    </li>
+<ul ngbNav #nav="ngbNav" class="navbar bg-light navbar-expand-lg">
+  <li ngbNavItem>
+    <button ngbNavLink>First</button>
+    <ng-template ngbNavContent>First content</ng-template>
+  </li>
+  <li ngbNavItem>
+    <button ngbNavLink>Second</button>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
 </ul>
+<div [ngbNavOutlet]="nav"></div>
